@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width:  100%;
+
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    letter-spacing: 1.5px;
+}
+/*-----------------------------------------------------*/
+.header{
+    height: 60px0;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-icon-menu{
+    display: block;
+    width:  40px;
+    height: 40;
+    font-size: 30px;
+    background: rgb(25, 187, 251);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: hand    ;
+}
+.logo, .icon-icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all .04s;
+
+}
+.menus{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menus__link{
+    display: block;
+    padding:  15px;
+    background:  rgb(25, 187, 251);
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.menus__link:hover  .select{
+    background: white;
+    color:  rgb(25, 187, 251);
+}
+
+.mostrar{
+    left: 0;
+}
+
+
+/* ESTILOS DEL BANNER*/
+
+.banner{
+    margin-top: -60px;
+    position:   relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+
+}
+.banner__txt{
+    display: none;
+}
+.banner .contedenedor{
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+/* estilos de info*/
+
+.info__columna{
+    background: rgb(25, 187, 251);
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+/* estilos de cursos*/
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color:rgb(25, 187, 251);
+}
+.cursos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cursos__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.cursos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+/* estilos de footer */
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+
+}
+ 
+
+
+/*  ESTILOS RESPONSIVE*/
+
+@media(min-width: 480px){
+    .logo{
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    .info, .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+
+    }
+    .info__columna{
+        width: 32%;
+      
+    }
+    .info__titulo{
+        font-size: 30%;
+        margin: 6px 0;
+    }
+
+    .cursos{
+        flex-flow: wrap;
+        margin-top: 
+    }
+    .section__titulo{
+        width: 100%;
+        margin-top: 17%;
+        
+    }
+    .cursos__columna{
+        width:49%;
+    }
+    .footer .social [class^="icon-"] {
+        margin: 0 18px;
+    }
+    
+}
+
+@media(min-width: 768px){
+.banner__titulo{
+    font-size: 50px;
+}
+.cursos__titulo{
+    font-size: 40px;
+}
+
+
+}
+
+
+@media(min-width: 1024px){
+    .menus{
+        display: flex;
+    }
+    .menus__link{
+        background: rgba(0, 0, 0,0.1);
+        margin-left: 10%;
+        border-radius: 30%;
+        
+    }
+    .nav{
+        position: static;
+        width: auto;
+        margin-right: 3%;
+        margin-top: 5px;
+
+    }
+    .icon-icon-menu{
+        display: none;
+    }
+    .banner__titulo{
+        font-size: 60px;
+        
+    }
+    .cursos__titulo{
+        font-size: 50px;
+    }
+    .section__titulo{
+        font-size: 70px;
+        
+    }
+  .cursos{
+      margin-top: -14%;
+      width: 76%;
+      margin-left: 13%;
+  }
+    
+    }
